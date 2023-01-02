@@ -1,0 +1,23 @@
+<!-- <p>news-heading works!</p> -->
+
+<div class="container mt-3">
+  <h4>HeadLines</h4>
+  <div class="row">
+    <div *ngFor="let item of headlinesDisplay" class="col-lg-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <img src="{{ item.urlToImage }}" class="card-img-top mb-2" alt="img">
+          <h5 class="card-title mt-2 mb-2">{{ item.title }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <div class="card-body">
+            <a href="{{ item.url }}" target="_blank" class="card-link ">Read More</a>
+            <a href="#" class="card-link btn btn-outline-primary">Read later</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
