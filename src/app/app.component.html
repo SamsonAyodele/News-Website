@@ -1,6 +1,7 @@
+<ngx-loading-bar [color]="'#000000'"></ngx-loading-bar>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="">News</a>
+    <a class="navbar-brand" routerLink="">News |</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -9,21 +10,27 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" routerLink="">Home</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
+       <li class="nav-item">
+          <a class="nav-link" routerLink="business">Business News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link" routerLink="tech">Tech News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li> -->
+          <a class="nav-link" routerLink="education">Sport News</a>
+        </li>
       </ul>
     </div>
+    <!-- <div class="input-group p-4 col"> -->
+      <app-search-news></app-search-news>
+      <!-- <input class="form-control " name="searchInput" type="text" placeholder="Search News" size="10"
+       > -->
+    <!-- </div> -->
   </div>
+
 </nav>
 <router-outlet></router-outlet>
 
 <footer class="mt-2">
-  <p class="text-center">&copy; 2023 News</p>
+  <p class="text-center">&copy; 2023 News Update</p>
 </footer>

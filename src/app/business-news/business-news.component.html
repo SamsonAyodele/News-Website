@@ -1,9 +1,11 @@
+<!-- <p>business-news works!</p> -->
+
 <!-- <p>news-heading works!</p> -->
 
 <div class="container mt-3">
-  <h4 class="mb-4 mt-2">HeadLines</h4>
+  <h4 class="mb-4 mt-2">Business</h4>
   <div class="row mt-10">
-    <div *ngFor="let item of headlinesDisplay" class="col-lg-3">
+    <div *ngFor="let item of business" class="col-lg-3">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <img src="{{ item.urlToImage }}" class="card-img-top mb-2" alt="img">
@@ -11,7 +13,7 @@
           <p class="card-text">{{ item.description }}</p>
           <div class="card-body">
             <a href="{{ item.url }}" target="_blank" class="card-link ">Read More</a>
-            <a href="#" class="card-link btn btn-outline-primary">Read later</a>
+            <a (click)="readLater()" class="card-link btn btn-outline-primary">Read later</a>
           </div>
         </div>
       </div>
