@@ -40,8 +40,8 @@ export class NewsServiceService {
     return this.http.get(this.educationUrl);
   }
 
-  search(): Observable<any>
+  search(searchText: string): Observable<any>
   {
-    return this.http.get(this.searchUrl);
+    return this.http.get(`https://newsapi.org/v2/everything?q=${searchText}&apiKey=c4db8bc772784f75a743d51742fcb719&language=en&page=1`);
   }
 }

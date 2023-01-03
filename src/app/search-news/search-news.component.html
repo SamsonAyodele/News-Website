@@ -1,5 +1,9 @@
 <!-- <p>search-news works!</p> -->
 <div class="input-group p-4 col">
   <input (keyup)="onKeyUp($event)"
-    class="form-control " name="searchInput" type="text" placeholder="Search News" size="25">
+    class="form-control " name="searchInput" type="text" placeholder="Search News" size="25"
+    [(ngModel)]="searchInput">
+    <span>
+      <a href="{{ searchInput }}" target="_blank"></a>
+    </span>
 </div>

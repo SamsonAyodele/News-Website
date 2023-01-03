@@ -10,19 +10,24 @@ export class SearchNewsComponent implements OnInit {
 
   searchNews: any = [];
   text = '';
-  @Input() items : any = [];
+  // @Input() items : any = [];
+  searchInput: string = '';
 
   constructor(private service:NewsServiceService) { }
 
   ngOnInit(): void {
-    this.service.search().subscribe((result) => {
-      this.searchNews = this.items.result
-    })
+
 
   }
 
   onKeyUp(x: any) {
-    this.text += x.target.value + ' | ';
+    var searchText = x.target.value;
+
+    this.service.search(searchText).subscribe((result) => {
+
+      this.text += x.target.value + ' | ';
+    })
+
   }
 
 }

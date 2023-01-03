@@ -12,6 +12,7 @@ import { TechNewsComponent } from './tech-news/tech-news.component';
 import { EducationNewsComponent } from './education-news/education-news.component';
 import { SearchNewsComponent } from './search-news/search-news.component';
 import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,6 +26,7 @@ import { LoadingBarHttpClientModule } from '@ngx-loading-bar/http-client';
     SearchNewsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
