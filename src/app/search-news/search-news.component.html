@@ -4,7 +4,10 @@
     class="form-control " name="searchInput" type="text" placeholder="Search News" size="25"
     [(ngModel)]="searchInput">
     <!-- {{searchNews}} -->
-    <ul class="serachNewItem" *ngFor="let item of searchNews">
-     <li><a href="{{ item.url }}" target="_blank">{{item.title}}</a></li>
-    </ul>
+    <div class="mt-4">
+      <ul class="serachNewItem" *ngFor="let item of searchNews">
+        <li><a href="{{ item.url }}" target="_blank">{{item.title}}</a></li>
+       </ul>
+    </div>
+
 </div>
