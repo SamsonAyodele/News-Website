@@ -25,7 +25,7 @@ export class SearchNewsComponent implements OnInit {
 
     this.service.search(searchText).subscribe((result) => {
 
-      this.text += x.target.value + ' | ';
+      this.searchNews = result.articles
     })
 
   }
