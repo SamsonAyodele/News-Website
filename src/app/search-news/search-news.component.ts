@@ -9,7 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SearchNewsComponent implements OnInit {
 
   searchNews: any = [];
-  text = '';
+  // text = '';
   // @Input() items : any = [];
   searchInput: string = '';
 
