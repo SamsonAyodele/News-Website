@@ -11,7 +11,7 @@
           <p class="card-text">{{ item.description }}</p>
           <div class="card-body">
             <a href="{{ item.url }}" target="_blank" class="card-link ">Read More</a>
-            <a href="#" class="card-link btn btn-outline-primary">Read later</a>
+            <a (click)="readLater()" class="card-link btn btn-outline-primary">Read later</a>
           </div>
         </div>
       </div>

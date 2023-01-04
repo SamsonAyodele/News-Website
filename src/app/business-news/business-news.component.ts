@@ -24,6 +24,6 @@ export class BusinessNewsComponent implements OnInit {
   }
 
   saveNews() {
-    localStorage.setItem('news', this.business);
+    localStorage.setItem('news', JSON.stringify(this.business));
   }
 }

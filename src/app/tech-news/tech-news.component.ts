@@ -19,4 +19,11 @@ export class TechNewsComponent implements OnInit {
     })
   }
 
+  readLater() {
+    this.saveNews()
+  }
+
+  saveNews() {
+    localStorage.setItem('news', JSON.stringify(this.tech));
+  }
 }
